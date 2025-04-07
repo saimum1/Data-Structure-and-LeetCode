@@ -8,3 +8,5 @@ const maxValue = (nums) => {
     }return maxValue
   };
   
+
+  console.log("max number is :",maxValue([4,2,5,1,6,7]))
