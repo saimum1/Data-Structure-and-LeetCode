@@ -14,6 +14,9 @@ def isAnagram( s, t):
                 countS[s[i]] = 1 + countS.get(s[i],0)
                 countT[t[i]] = 1 + countT.get(t[i],0)
 
+        print("countS",countS)        
+        print("countT",countT)        
+
         for c in countS:
             if countS[c] != countT.get(c,0):
                return False 
