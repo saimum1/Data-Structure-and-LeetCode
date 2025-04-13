@@ -19,6 +19,7 @@ def topKFrequent( nums, k):
         sorted_dict = {}
         for key in keylists:
             sorted_dict[key] = count[key]   
+            
         for x in sorted_dict:
                 if len(newarr) == k:
                       return newarr

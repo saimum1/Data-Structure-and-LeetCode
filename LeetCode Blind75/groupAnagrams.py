@@ -10,8 +10,8 @@ def groupAnagrams(strs):
                 print(i)
                 freq =[0] * 26
                 for y in i:
-                        freq[ord(y) - ord('a')] += 1
-                freq_str = '#'.join(str(count) for count in freq)
+                        freq[ord(y) - ord('a')] += 1 
+                freq_str = '#'.join(str(count) for count in freq) 
 
                 if freq_str in gro:
                         gro[freq_str].append(i)
