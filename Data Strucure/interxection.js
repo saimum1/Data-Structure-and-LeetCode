@@ -1,16 +1,14 @@
+
 const intersection = (a, b) => {
     // todo\
 
     let newArr=[]
-
-    for(let i =0 ;i<a?.length ; i ++){
-        console.log("a[i]",a[i] , b[i])
-        let duplicate=newArr?.includes(a[i])
-        let getv=b?.includes(a[i])
-        if(getv){
-            newArr.push(a[i])
+    const sets = new Set(a)
+    for(let i of b){
+        // console.log("i",i)
+        if(sets.has(i)){
+            newArr.push(i)
         }
-    
     }
     return newArr
   };
