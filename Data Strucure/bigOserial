@@ -1,0 +1,11 @@
+
+
+
+
+
+// Constant Time:         O(1)
+// Logarithmic Time:      O(log n)
+// Linear Time:           O(n)
+// Polynomial Time:       O(n^c)       ← where c is a constant > 1
+// Exponential Time:      O(c^n)       ← where c is a constant > 1
+// Factorial Time:        O(n!)
