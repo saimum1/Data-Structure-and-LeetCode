@@ -1,16 +1,41 @@
 const islandCount = (grid) => {
-    // todo
-    let graph={w:[],
-        
+  
+  const visited = new Set()
+  let count = 0
+
+  for(let i = 0 ; i < grid.length ;  i ++){
+    for(let j = 0 ; j < grid[0].length ;  j ++){
+
+       if(explore(grid,i,j,visited) === true){
+          count +=1
+       } 
     }
-    for (let i of grid){
-        if(!graph[i])graph[]
-    }
+  }return count
+
+
     
   };
+  const explore=(grid,i,j,visited)=>{
+    const rowInbounds= 0<=i && i < grid.length
+    const columnInbounds= 0<=j && j < grid[0].length
 
+    if(!rowInbounds || ! columnInbounds) return false
+    if(!rowInbounds || ! columnInbounds) return false
+    if(grid[i][j] === 'W') return false
 
+    const pos = i + ',' + j
+    
+    if(visited.has(pos))return false
+        
+        visited.add(pos)
+        explore(grid,i+1,j,visited)
+        explore(grid,i-1,j,visited)
+        explore(grid,i,j+1,visited)
+        explore(grid,i,j-1,visited)
 
+        return true
+
+} 
   const grid = [
     ['W', 'L', 'W', 'W', 'W'],
     ['W', 'L', 'W', 'W', 'W'],
@@ -20,4 +45,10 @@ const islandCount = (grid) => {
     ['L', 'L', 'W', 'W', 'W'],
   ];
   
-  islandCount(grid); // -> 3
+  console.log(islandCount(grid)) ; // -> 3'
+
+
+
+
+
+  
