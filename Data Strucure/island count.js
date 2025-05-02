@@ -1,7 +1,7 @@
 const islandCount = (grid) => {
   
   const visited = new Set()
-  let count = 0
+  let count = 1
 
   for(let i = 0 ; i < grid.length ;  i ++){
     for(let j = 0 ; j < grid[0].length ;  j ++){
@@ -37,14 +37,11 @@ const islandCount = (grid) => {
 
 } 
   const grid = [
-    ['W', 'L', 'W', 'W', 'W'],
-    ['W', 'L', 'W', 'W', 'W'],
-    ['W', 'W', 'W', 'L', 'W'],
-    ['W', 'W', 'L', 'L', 'W'],
-    ['L', 'W', 'W', 'L', 'L'],
-    ['L', 'L', 'W', 'W', 'W'],
+    ['L', 'L','W'],
+    ['L', 'L','L'],
+    ['L', 'L','L'],
   ];
-  
+   
   console.log(islandCount(grid)) ; // -> 3'
 
 
