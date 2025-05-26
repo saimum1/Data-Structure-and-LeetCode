@@ -32,3 +32,7 @@ const anagrams = (s1, s2) => {
 
 
 console.log("anagrams",anagrams('cats', 'tocs'))
+
+
+
+
