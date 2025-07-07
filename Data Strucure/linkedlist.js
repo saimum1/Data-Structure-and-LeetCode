@@ -19,3 +19,4 @@ const fillvalues=(head,values)=>{
 
 
 console.log("linkedListValues is :",linkedListValues('a'))
+
