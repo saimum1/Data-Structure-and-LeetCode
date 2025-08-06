@@ -14,6 +14,6 @@ const reverseList = (head) => {
 
 
 //     
- //     a --> b --> c --> d --> null
- //     cur   n
+ //   null -->  a  -->  b --> c --> d --> null
+ //   prev --  cur --  n
  //   null <--  a <-- b <-- c <-- d 
